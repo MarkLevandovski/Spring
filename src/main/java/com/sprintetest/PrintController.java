@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class PrintController {
 
     @Autowired
-    PrintNameService printNameService;
+    private PrintNameService printNameService;
 
     @Autowired
-    PrintSurnameService printSurnameService;
+    private PrintSurnameService printSurnameService;
 
     @RequestMapping(value = "/printfullname", method = RequestMethod.GET)
     public String printFullName() {
