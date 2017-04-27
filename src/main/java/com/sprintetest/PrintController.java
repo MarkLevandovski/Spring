@@ -17,6 +17,14 @@ public class PrintController {
     @Autowired
     private PrintSurnameService printSurnameService;
 
+    public void setPrintNameService(PrintNameService printNameService) {
+        this.printNameService = printNameService;
+    }
+
+    public void setPrintSurnameService(PrintSurnameService printSurnameService) {
+        this.printSurnameService = printSurnameService;
+    }
+
     @RequestMapping(value = "/printfullname", method = RequestMethod.GET)
     public String printFullName() {
         String name = printNameService.printName();
