@@ -17,6 +17,9 @@ public class PrintControllerJunitTest {
         printNameService = new PrintNameService();
         printSurnameService = new PrintSurnameService();
         printController = new PrintController();
+
+        printController.setPrintNameService(printNameService);
+        printController.setPrintSurnameService(printSurnameService);
     }
 
     @Test
