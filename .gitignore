@@ -16,3 +16,8 @@ hs_err_pid*
 .settings/
 */target/**
 target/
+.idea/
+Spring.iml
+mvnw
+mvnw.cmd
+springTest.iml
